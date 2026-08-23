@@ -35,6 +35,7 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBoxTime = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -62,7 +63,7 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(109, 17);
+            this.buttonStart.Location = new System.Drawing.Point(222, 18);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
             this.buttonStart.TabIndex = 2;
@@ -75,11 +76,20 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // textBoxTime
+            // 
+            this.textBoxTime.Location = new System.Drawing.Point(116, 20);
+            this.textBoxTime.Name = "textBoxTime";
+            this.textBoxTime.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTime.TabIndex = 4;
+            this.textBoxTime.TextChanged += new System.EventHandler(this.textBoxTime_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(326, 75);
+            this.Controls.Add(this.textBoxTime);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.labelTimerValue);
             this.Controls.Add(this.label1);
@@ -98,6 +108,7 @@
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBoxTime;
     }
 }
 

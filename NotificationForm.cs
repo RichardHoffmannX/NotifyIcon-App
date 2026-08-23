@@ -12,7 +12,7 @@ public class NotificationForm : Form
     {
         FormBorderStyle = FormBorderStyle.None;
         StartPosition = FormStartPosition.Manual;
-        Size = new Size(320, 100);
+        Size = new Size(400, 120);
         BackColor = Color.FromArgb(35, 35, 35);
         TopMost = true;
         ShowInTaskbar = false;
@@ -23,7 +23,7 @@ public class NotificationForm : Form
             ForeColor = Color.White,
             Font = new Font("Segoe UI", 11, FontStyle.Bold),
             Location = new Point(16, 12),
-            Size = new Size(280, 24)
+            Size = new Size(300, 20)
         };
 
         messageLabel = new Label
@@ -32,7 +32,7 @@ public class NotificationForm : Form
             ForeColor = Color.Gainsboro,
             Font = new Font("Segoe UI", 9),
             Location = new Point(16, 42),
-            Size = new Size(280, 40)
+            Size = new Size(300, 50)
         };
 
         Controls.Add(titleLabel);
@@ -58,7 +58,7 @@ public class NotificationForm : Form
 
         Location = new Point(
             screen.Right - Width - 20,
-            screen.Bottom - Height - 20
+            screen.Bottom - Height - 10
         );
 
         closeTimer.Start();
